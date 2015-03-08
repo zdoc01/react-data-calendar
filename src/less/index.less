@@ -1,0 +1,83 @@
+@import "bootstrap/bootstrap.less";
+
+@softBorder: 1px solid #CCCCCC;
+
+body {
+	padding: 10px 0px;
+}
+
+// Generate class for 7 columns
+.col-lg-1-7 {
+	.make-lg-column(1.714285714);
+}
+
+.month-header {
+	margin-bottom: 20px;
+	border: @softBorder;
+	border-radius: 4px;
+	font-size: 20px;
+}
+
+.grid {
+	border: @softBorder;
+	border-radius: 4px;
+
+	.grid-row {
+		.col-lg-1-7 {
+			border-bottom: @softBorder;
+			border-right: @softBorder;
+
+			&:last-child {
+				border-right: none;
+			}
+
+			// Prevent overlapping right border when > 1200px
+			@media (max-width: 1200px) {
+				border-right: none;
+			}
+		}
+
+		&:last-child > .day {
+			// Only show bottom border on days in last row when < 1200px
+			@media (min-width: 1200px) {
+				border-bottom: none;
+			}
+		}
+	}
+}
+
+.grid-header  {
+	// Collapse grid header when < 1200px
+	@media (max-width: 1200px) {
+		.collapse;
+	}
+
+	& > .col-lg-1-7 {
+		text-align: center;
+	}
+}
+
+.week > .day {
+	padding: 5px 8px;
+	min-height: 200px;
+
+	.date {
+		color: #AAAAAA;
+
+		// Emphasize the dates for the current month
+		&.current-month {
+			color: #000000;
+			font-weight: bold;
+		}
+	}
+
+	.item {
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}
+}
+
+.shift-month {
+	cursor: pointer;
+}
