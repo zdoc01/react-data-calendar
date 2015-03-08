@@ -2,7 +2,7 @@
   "name": "react-data-calendar",
   "version": "0.0.1",
   "description": "React data calendar component.",
-  "main": "src/index.js",
+  "main": "index.js",
   "scripts": {
     "build": "npm run-script build-js && npm run-script build-less",
     "build-js": "browserify --debug --transform reactify src/index.js > dist/bundle.js",
