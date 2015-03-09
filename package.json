@@ -1,6 +1,6 @@
 {
   "name": "react-data-calendar",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "React data calendar component.",
   "main": "index.js",
   "scripts": {
@@ -30,5 +30,10 @@
     "react-component",
     "calendar",
     "month"
-  ]
+  ],
+  "browserify": {
+    "transform": [
+      "reactify"
+    ]
+  }
 }
