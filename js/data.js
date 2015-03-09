@@ -1,7 +1,4 @@
-var React = require("react");
-var Calendar = require("./views/Calendar");
-
-var CALENDAR_ITEMS = {
+var ITEMS = {
 	months: {
 		"0": {
 			days: {
@@ -28,5 +25,4 @@ var CALENDAR_ITEMS = {
 	}
 };
 
-var app = document.getElementById("app");
-React.render(<Calendar data={CALENDAR_ITEMS}/>, app);
+module.exports = ITEMS;
