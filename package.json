@@ -1,6 +1,6 @@
 {
   "name": "react-data-calendar",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "description": "React data calendar component.",
   "main": "index.js",
   "scripts": {

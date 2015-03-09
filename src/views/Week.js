@@ -3,7 +3,7 @@ var Day = require("./Day");
 
 var Week = React.createClass({
 	render: function() {
-		var data = this.props.data;
+		var data = this.props.data || {};
 		var dates = this.props.dates, days = [];
 		for (var i = 0; i < dates.length; i++) {
 			var key = "date-" + i;
