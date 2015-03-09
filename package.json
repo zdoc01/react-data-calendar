@@ -14,7 +14,7 @@
   "license": "MIT",
   "dependencies": {
     "react": "^0.12.2",
-    "react-data-calendar": "0.0.1"
+    "react-data-calendar": "~0.1.0"
   },
   "devDependencies": {
     "browserify": "^9.0.3",
